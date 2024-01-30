@@ -8,7 +8,7 @@ def Rename_file():
 
     for filename in dir_list:
         newname = "This_is_Picture"  # ชื่อที่จะนำมาใส่แทนชื่อเดิม
-        name1 = "{}_{:01d}.png".format(newname, i) #{:01d}ใช้กำหนดความยาวตัวเลข
+        name1 = "{}_{:03d}.png".format(newname, i) #{:01d}ใช้กำหนดความยาวตัวเลข
         os.rename(filename , name1)
         
         i +=1
